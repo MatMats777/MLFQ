@@ -37,8 +37,8 @@ public class Main {
             System.out.printf("Tamanho do burst de P%d: ", i);
             int burst = input.nextInt();//lê tamanho do burst
             System.out.printf("Quantidade de operações de I/O de P%d: ", i);
-            int es = input.nextInt();// lê número de e/s
-            Processo p = new Processo(burst, es, "P" + i);////Inicialização do processo
+            int io = input.nextInt();// lê número de e/s
+            Processo p = new Processo(burst, io, "P" + i);////Inicialização do processo
             fila1.processos.add(p);//Adição do processo a fila 1
         }
 
